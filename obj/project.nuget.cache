@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "0RetsMGZqEU7Rgq+SmdX03KgfY98KNE0pNjZMQkaJMK5rsQLDSQdMz3CzVqxDAxD2q9xl1Uyz4HXci2zwJqB7A==",
+  "success": true,
+  "projectFilePath": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wuyunge\\.nuget\\packages\\websocketsharpfork\\1.0.4\\websocketsharpfork.1.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“net6.0”还原包“WebSocketSharpFork 1.0.4”。此包可能与项目不完全兼容。",
+      "libraryId": "WebSocketSharpFork",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

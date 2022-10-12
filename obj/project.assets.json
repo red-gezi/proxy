@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "WebSocketSharpFork/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net35/websocket-sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net35/websocket-sharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebSocketSharpFork/1.0.4": {
+      "sha512": "gLe6No9b9NagLaOHn1lX/g8DHrvQ9PjjbH//Qld2SHfBjPbmJXYjIrMwwCVYW68hDSTqOElfhfxnjeFeOAaoXA==",
+      "type": "package",
+      "path": "websocketsharpfork/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/websocket-sharp.dll",
+        "websocketsharpfork.1.0.4.nupkg.sha512",
+        "websocketsharpfork.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "WebSocketSharpFork >= 1.0.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wuyunge\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
+      "projectName": "网络穿透",
+      "projectPath": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
+      "packagesPath": "C:\\Users\\wuyunge\\.nuget\\packages\\",
+      "outputPath": "D:\\vs2022-Project\\网络穿透\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\wuyunge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "WebSocketSharpFork": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“net6.0”还原包“WebSocketSharpFork 1.0.4”。此包可能与项目不完全兼容。",
+      "libraryId": "WebSocketSharpFork",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

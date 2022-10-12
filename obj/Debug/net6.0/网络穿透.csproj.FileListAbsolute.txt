@@ -1,0 +1,17 @@
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\网络穿透.exe
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\网络穿透.deps.json
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\网络穿透.runtimeconfig.json
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\网络穿透.dll
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\ref\网络穿透.dll
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\网络穿透.pdb
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.csproj.AssemblyReference.cache
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.AssemblyInfoInputs.cache
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.AssemblyInfo.cs
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.csproj.CoreCompileInputs.cache
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.dll
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\ref\网络穿透.dll
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.pdb
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.genruntimeconfig.cache
+D:\vs2022-Project\网络穿透\bin\Debug\net6.0\websocket-sharp.dll
+D:\vs2022-Project\网络穿透\obj\Debug\net6.0\网络穿透.csproj.CopyComplete
