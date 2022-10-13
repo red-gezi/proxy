@@ -36,8 +36,6 @@ internal class Client
 
         public void Run()
         {
-            Socket tcp1 = clientSocket;
-            Socket tcp2 = targetSocket;
             //监听客户端连接
             Task.Run(async () =>
             {
@@ -46,17 +44,26 @@ internal class Client
                     byte[] result = new byte[1024];
                     int num = clientSocket.Receive(result, result.Length, SocketFlags.None);
                     if (num == 0) break;//接受空包关闭连接
-                    Console.WriteLine("接收" + num);
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine($"{clientSocket.RemoteEndPoint}---->{targetSocket.RemoteEndPoint}({clientSocket.LocalEndPoint}):----接收长度:{num}");
+                    Console.ForegroundColor = ConsoleColor.White;
                     targetSocket.Send(result, num, SocketFlags.None);
                     _ = Task.Run(() =>
                     {
                         while (true)
                         {
                             byte[] result = new byte[1024];
-                            int num = tcp2.Receive(result, result.Length, SocketFlags.None);
-                            if (num == 0) break; //接受空包关闭连接
-                            Console.WriteLine("转发" + num);
-                            tcp1.Send(result, num, SocketFlags.None);
+                            try
+                            {
+                                int num = targetSocket.Receive(result, result.Length, SocketFlags.None);
+                                if (num == 0) break; //接受空包关闭连接
+                                Console.WriteLine($"{targetSocket.RemoteEndPoint}---->{clientSocket.RemoteEndPoint}({clientSocket.LocalEndPoint}):----转发长度:{num}");
+                                clientSocket.Send(result, num, SocketFlags.None);
+                            }
+                            catch (Exception)
+                            {
+                            }
+                          
                         }
                     });
                 }

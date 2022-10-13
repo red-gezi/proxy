@@ -14,7 +14,6 @@ internal class Server
         sSocket.Bind(ipe);
         sSocket.Listen(100);
         Console.WriteLine("监听已经打开，请等待");
-
         Task.Run(() =>
         {
             while (true)
@@ -23,45 +22,45 @@ internal class Server
                 Console.WriteLine("接收到链接");
                 byte[] recByte = new byte[4096];
                 int bytes = newSocket.Receive(recByte);
-                Console.WriteLine(" from {0}", newSocket.RemoteEndPoint?.ToString());
                 string recStr = Encoding.ASCII.GetString(recByte, 0, bytes);
                 if (recStr == "C")
                 {
-                    Console.WriteLine("确认为穿透客户端");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine($"确认为'穿透客户端'"+ newSocket.RemoteEndPoint);
+                    Console.ForegroundColor = ConsoleColor.White;
                     clinetSocket = newSocket;
-                    Console.WriteLine("客户端1:{0}", recStr);
                 }
                 else
                 {
-                    Console.WriteLine("确认为访问者,进行转发");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("确认为'浏览器'" + newSocket.RemoteEndPoint);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    if (!clinetSocket.Connected)
+                    {
+                        continue;
+                    }
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"{newSocket.RemoteEndPoint}---->{clinetSocket.RemoteEndPoint}({clinetSocket.LocalEndPoint}):----发送给客户端长度:{recByte.Length}");
+                    Console.ForegroundColor = ConsoleColor.White;
                     clinetSocket?.Send(recByte, recByte.Length, 0);
                     _ = Task.Run(() =>
                       {
                           while (true)
                           {
-                              if (!newSocket.Connected)
-                              {
-                                  newSocket.Dispose();
-                                  newSocket = null;
-                                  break;
-                              }
-                              byte[] result = new byte[1024];
-                              int num = clinetSocket.Receive(result, result.Length, SocketFlags.None);
-                              if (num == 0) break;//接受空包关闭连接
-                              Console.WriteLine("转发" + num);
-                              if (!newSocket.Connected)
-                              {
-                                  newSocket.Dispose();
-                                  newSocket = null;
-                                  break;
-                              }
                               try
                               {
+                                  byte[] result = new byte[1024];
+                                  int num = clinetSocket.Receive(result, result.Length, SocketFlags.None);
+                                  if (num == 0) break;//接受空包关闭连接
+                                  Console.WriteLine($"{clinetSocket.RemoteEndPoint}({clinetSocket.LocalEndPoint})---->{newSocket.RemoteEndPoint}:----返回给网页长度:{num}");
                                   newSocket.Send(result, num, SocketFlags.None);
                               }
                               catch (Exception e)
                               {
-                                  Console.WriteLine(e.Message); 
+                                  Console.WriteLine(e.Message);
+                                  newSocket.Dispose();
+                                  newSocket = null;
+                                  break;
                               }
                           }
                       });
