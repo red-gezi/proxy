@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "0RetsMGZqEU7Rgq+SmdX03KgfY98KNE0pNjZMQkaJMK5rsQLDSQdMz3CzVqxDAxD2q9xl1Uyz4HXci2zwJqB7A==",
+  "dgSpecHash": "VMWI1L0i9+TxOz/JYfVfWUtCAYfnR8MuCsv3ZGB/sKB8v9fo7GYoraH6Fowj2hYzxmHs46rYK5sH4w1xwdJVKw==",
   "success": true,
-  "projectFilePath": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
+  "projectFilePath": "D:\\vs2022-Project\\网络穿透\\Proxy.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wuyunge\\.nuget\\packages\\websocketsharpfork\\1.0.4\\websocketsharpfork.1.0.4.nupkg.sha512"
+    "C:\\Users\\wuyunge\\.nuget\\packages\\fasttunnel.core\\2.1.1\\fasttunnel.core.2.1.1.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\websocketsharpfork\\1.0.4\\websocketsharpfork.1.0.4.nupkg.sha512",
+    "C:\\Users\\wuyunge\\.nuget\\packages\\yarp.reverseproxy\\1.1.0\\yarp.reverseproxy.1.1.0.nupkg.sha512"
   ],
   "logs": [
     {

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj": {}
+    "D:\\vs2022-Project\\网络穿透\\Proxy.csproj": {}
   },
   "projects": {
-    "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj": {
+    "D:\\vs2022-Project\\网络穿透\\Proxy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
-        "projectName": "网络穿透",
-        "projectPath": "D:\\vs2022-Project\\网络穿透\\网络穿透.csproj",
+        "projectUniqueName": "D:\\vs2022-Project\\网络穿透\\Proxy.csproj",
+        "projectName": "Proxy",
+        "projectPath": "D:\\vs2022-Project\\网络穿透\\Proxy.csproj",
         "packagesPath": "C:\\Users\\wuyunge\\.nuget\\packages\\",
         "outputPath": "D:\\vs2022-Project\\网络穿透\\obj\\",
         "projectStyle": "PackageReference",
